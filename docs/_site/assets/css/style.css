@@ -1,0 +1,114 @@
+.text-block {
+  position: absolute;
+  text-align: center; 
+  background-color: #28bdef;
+  color: #e83b7a;
+  font-family: 'Roboto Condensed',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px black;
+}
+
+.headline {
+  font-size: 30px;
+}
+
+/* Fontsize of the countdown numbers */
+.nr_years {
+  font-size: 50px;
+}
+
+.nr_days {
+  font-size: 50px;
+}
+
+.nr_hours {
+  font-size: 50px;
+}
+
+.nr_minutes {
+  font-size: 50px;
+}
+
+.nr_seconds {
+  font-size: 50px;
+}
+
+/* Fontsize and color of the countdown numbers text*/
+.text_years {
+  font-size: 30px;
+  color: #eab00c;
+}
+
+.text_days {
+  font-size: 30px;
+  color: #eab00c;
+}
+
+.text_hours {
+  font-size: 30px;
+  color: #eab00c;
+}
+
+.text_minutes {
+  font-size: 30px;
+  color: #eab00c;
+}
+
+.text_seconds {
+  font-size: 30px;
+  color: #eab00c;
+}
+
+/* Colon settings */
+.colon1 {
+  font-size: 50px;
+  color: #eab00c;
+}
+
+.colon2 {
+  font-size: 50px;
+  color: #eab00c;
+}
+
+.colon3 {
+  font-size: 50px;
+  color: #eab00c;
+}
+
+.colon4 {
+  font-size: 50px;
+  color: #eab00c;
+}
+/* Grid layout of the countdown timer */
+.nr_years { grid-area: nr_years; }
+.nr_days { grid-area: nr_days; }
+.nr_hours { grid-area: nr_hours; }
+.nr_minutes { grid-area: nr_minutes; }
+.nr_seconds { grid-area: nr_seconds; }
+
+.text_years { grid-area: text_years; }
+.text_days { grid-area: text_days; }
+.text_hours { grid-area: text_hours; }
+.text_minutes { grid-area: text_minutes; }
+.text_seconds { grid-area: text_seconds; }
+
+.colon1 { grid-area: colon1; }
+.colon2 { grid-area: colon2; }
+.colon3 { grid-area: colon3; }
+.colon4 { grid-area: colon4; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nr_years colon1 nr_days colon2 nr_hours colon3 nr_minutes colon4 nr_seconds'
+    'text_years none1 text_days none2 text_hours none3 text_minutes none4 text_seconds';
+  grid-gap: 10px;
+  background-color: #28bdef;
+  padding: 10px;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+}

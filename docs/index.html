@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container clock">
+    <!-- <img src="assets/img/germany.png" class="bg map"> -->
+    <div class="text-block" style="width:100%;">
+      <div class="headline">Zeit bis Deutschland die 1,5 °C Grenze überschritten hat:</div>
+      <div class="grid-container">
+        <div id="years" class="nr_years"></div>
+        <div id="days" class="nr_days"></div>
+        <div id="hours" class="nr_hours"></div>
+        <div id="minutes" class="nr_minutes"></div>
+        <div id="seconds" class="nr_seconds"></div>
+
+        <div class="text_years">Jahre</div>
+        <div class="text_days">Tage</div>
+        <div class="text_hours">Stunden</div>
+        <div class="text_minutes">Minuten</div>
+        <div class="text_seconds">Sekunden</div>
+
+        <div class="colon1">:</div>
+        <div class="colon2">:</div>
+        <div class="colon3">:</div>
+        <div class="colon4">:</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/clock.js"></script>
+</body>
 </html>
+
