@@ -59,23 +59,49 @@
   color: #eab00c;
 }
 
+/* Colon settings */
+.colon1 {
+  font-size: 50px;
+  color: #eab00c;
+}
+
+.colon2 {
+  font-size: 50px;
+  color: #eab00c;
+}
+
+.colon3 {
+  font-size: 50px;
+  color: #eab00c;
+}
+
+.colon4 {
+  font-size: 50px;
+  color: #eab00c;
+}
 /* Grid layout of the countdown timer */
 .nr_years { grid-area: nr_years; }
 .nr_days { grid-area: nr_days; }
 .nr_hours { grid-area: nr_hours; }
 .nr_minutes { grid-area: nr_minutes; }
 .nr_seconds { grid-area: nr_seconds; }
+
 .text_years { grid-area: text_years; }
 .text_days { grid-area: text_days; }
 .text_hours { grid-area: text_hours; }
 .text_minutes { grid-area: text_minutes; }
 .text_seconds { grid-area: text_seconds; }
 
+.colon1 { grid-area: colon1; }
+.colon2 { grid-area: colon2; }
+.colon3 { grid-area: colon3; }
+.colon4 { grid-area: colon4; }
+
 .grid-container {
   display: grid;
   grid-template-areas:
-    'nr_years nr_days nr_hours nr_minutes nr_seconds'
-    'text_years text_days text_hours text_minutes text_seconds';
+    'nr_years colon1 nr_days colon2 nr_hours colon3 nr_minutes colon4 nr_seconds'
+    'text_years none1 text_days none2 text_hours none3 text_minutes none4 text_seconds';
   grid-gap: 10px;
   background-color: #28bdef;
   padding: 10px;
