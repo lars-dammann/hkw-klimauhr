@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+    $( document ).ready(function() {
+      var img = document.querySelector('img.map');
+      console.log(img.height);
+      jQuery('.text-block').css("top",img.height/3);
+    });
+    jQuery(window).on('resize', function(){
+        var img = document.querySelector('img.map');
+        jQuery('.text-block').css("top",img.height/3);
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+		<div class="container">
+      <h3>Klimauhr</h3>    
+      <!-- <a class="navbar-brand" href="#"><img id="logo" src="assets/img/germany_logo.png"></a>   -->
+		</div>
+	</nav>
+
+
+  <div class="container clock">
+    <!-- <img src="assets/img/germany.png" class="bg map"> -->
+    <div class="text-block" style="width:100%;">
+      <h4>So viel Zeit haben wa noch:</h4>
+      <div class="outer">
+        <div class="top" id="clock_area"></div>
+        <div class="below">Test</div>
+      </div>
+    </div>
+  </div>
+
+	<!-- External JS libraries -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="assets/js/clock.js"></script>
+</body>
 </html>
+

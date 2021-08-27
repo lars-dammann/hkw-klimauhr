@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+    /* background-image: url('../img/germany.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+	
+}
+
+#logo {
+	height:50px;
+}
+
+.navbar-brand {
+	height: 60px;
+	padding: 5px 0px;
+}
+img.bg {
+
+    /* Set up proportionate scaling */
+    height: auto;
+    max-height: 100%; /*can not get any bigger than the container that it is in*/
+    max-width: 100%; /*always shows complete width or scales appropriately*/
+
+
+}
+
+div.clock {
+    position: relative;
+    text-align: center; /*aligns image in center*/
+    height: 600px; /*max height of 600px*/
+  }
+  
+  .text-block {
+    position: absolute;
+    text-align: center; 
+    background-color: #28bdef;
+    color: #e83b7a;
+  }
+
+  .outer {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+  }
+  .outer > * {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .outer .below {
+    z-index: 2;
+  }
+  .outer .top {
+    z-index: 1;
+  }
