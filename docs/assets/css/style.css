@@ -1,5 +1,5 @@
 .text-block {
-  position: absolute;
+  position: relative;
   text-align: center; 
   background-color: #28bdef;
   color: #e83b7a;
